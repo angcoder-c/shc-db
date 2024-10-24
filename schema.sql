@@ -1,3 +1,7 @@
+CREATE USER 'admin'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON `shc-db`.* TO 'admin'@'%';
+FLUSH PRIVILEGES;
+
 CREATE DATABASE IF NOT EXISTS `shc-db`;
 
 use `shc-db`
