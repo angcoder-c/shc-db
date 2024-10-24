@@ -1,3 +1,7 @@
+CREATE DATABASE IF NOT EXISTS `shc-db`;
+
+use `shc-db`
+ 
 CREATE TABLE activities (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255) NOT NULL,
