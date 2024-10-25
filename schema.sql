@@ -1,6 +1,5 @@
-DROP USER 'admin'@'%';
-CREATE USER 'admin'@'%' IDENTIFIED BY 'password';
-GRANT ALL PRIVILEGES ON `shc-db`.* TO 'admin'@'%';
+CREATE USER 'admindb'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON `shc-db`.* TO 'admindb'@'%';
 FLUSH PRIVILEGES;
 
 CREATE DATABASE IF NOT EXISTS `shc-db`;
